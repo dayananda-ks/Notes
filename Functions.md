@@ -6,6 +6,7 @@ A function allows us to write a block of code once and **reuse it whenever requi
 
 ---
 
+
 # 1. What is a Function?
 
 A function is an **independent block of code that performs a specific action based on the input provided to it**.

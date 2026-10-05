@@ -1810,13 +1810,14 @@ if condition:
 if condition:
     statement
 else:
+
     statement
 ```
 
 ```python
 if condition1:
     statement
-elif condition2:s
+elif condition2:
     statement
 else:
     statement
