@@ -1,9 +1,9 @@
 # Login system: Check a username and password with a limit of 3 attempts, and lock
 # the account after 3 failures. On success, show a role-based menu (admin or user).
 adminName = "daya"
-apass = "abc@123"
-userName = "ashu"
-upass = "ashu@123"
+apass = "123"
+userName = "abc"
+upass = "123"
 n = 3
 i = 1
 while(n + 1 > i ):
@@ -26,7 +26,6 @@ while(n + 1 > i ):
             print("No more attempts.")
             print("Account Locked.")
             i = i + 1
-        
         else:
             print("Wrong password and username.",n - i," attempts is there.")
             i = i + 1
