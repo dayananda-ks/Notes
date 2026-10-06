@@ -62,67 +62,72 @@
 
 # algo
 # display the menu with price
-print("1.Idli : 30\n2.Dosa : 50\n3.Biryani : 180\n4.cofee : 20\n5.Genarate Bill")
-# customer only choose these options
-# customer ordering items untill they choose bill.
-#intitaly total amount, each food amount, quantity is 0. we need to intitlize it has 0.
-# use while loop bcz user decide how many time they order we don't know that
-# using condtinal statement it calc each food quantity and amount.
-# user used 1 2 3 4 5 for food order bcz validation purpose
-idli_quantity = 0
-dosa_quantity = 0
-coffee_quantity = 0
-biryani_quantity = 0
-ia = 0
-ba = 0
-da = 0
-ca = 0
-ip = 30
-dp = 50
-bp = 180
-cp = 20
-gst = 0
-discount = 0
-total_amount = 0
-while(True):
-    order = int(input("Enter the food : "))
-    if(order > 5 ) or (order <= 0):
-        print("Choose only 1 to 5 options")
-    elif(order == 1):
-        idli_quantity = idli_quantity + 1
-        # idli amount
-        ia = ia + ip
-        total_amount = total_amount + ia
-    elif(order == 2):
-        dosa_quantity = dosa_quantity + 1
-        da = da + dp
-        total_amount = total_amount + da
-    elif(order == 3):
-        biryani_quantity = biryani_quantity + 1
-        ba = ba + bp
-        total_amount = total_amount + ba
-    elif(order == 4):
-        coffee_quantity = coffee_quantity + 1
-        ca = ca + cp
-        total_amount = total_amount + ca
-    elif(order == 5):
-        if(total_amount <=  0):
-            print("You not yet order.. order the food ")
-            continue
-        else:
-            print("==== bill ====")
-            print("Items | quantity | Amount")
-            if(idli_quantity > 0):
-                print("Idli     ", idli_quantity,   "        " , ia)
-            if(dosa_quantity > 0):
-                print("Dosa     ", dosa_quantity,   "        " , da)
-            if(biryani_quantity > 0):
-                print("Biryani  ", biryani_quantity,"        " , ba)     
-            if(coffee_quantity > 0):
-                print("Coffee   ", coffee_quantity, "        " , ca)
-            discount = total_amount * 0.10
-            total_amount = total_amount - discount
-            gst = total_amount * 0.05
-            print("Total amount : ", total_amount + gst)
-            print("Thank you for visting!")
-            break
+def foodOrder(customer):
+
+    print("1.Idli : 30\n2.Dosa : 50\n3.Biryani : 180\n4.cofee : 20\n5.Genarate Bill")
+    # customer only choose these options
+    # customer ordering items untill they choose bill.
+    #intitaly total amount, each food amount, quantity is 0. we need to intitlize it has 0.
+    # use while loop bcz user decide how many time they order we don't know that
+    # using condtinal statement it calc each food quantity and amount.
+    # user used 1 2 3 4 5 for food order bcz validation purpose
+    idli_quantity = 0
+    dosa_quantity = 0
+    coffee_quantity = 0
+    biryani_quantity = 0
+    ia = 0
+    ba = 0
+    da = 0
+    ca = 0
+    ip = 30
+    dp = 50
+    bp = 180
+    cp = 20
+    gst = 0
+    discount = 0
+    total_amount = 0
+    while(True):
+        order = int(input("Enter the food : "))
+        if(order > 5 ) or (order <= 0):
+            print("Choose only 1 to 5 options")
+        elif(order == 1):
+            idli_quantity = idli_quantity + 1
+            # idli amount
+            ia = ia + ip
+            total_amount = total_amount + ia
+        elif(order == 2):
+            dosa_quantity = dosa_quantity + 1
+            da = da + dp
+            total_amount = total_amount + da
+        elif(order == 3):
+            biryani_quantity = biryani_quantity + 1
+            ba = ba + bp
+            total_amount = total_amount + ba
+        elif(order == 4):
+            coffee_quantity = coffee_quantity + 1
+            ca = ca + cp
+            total_amount = total_amount + ca
+        elif(order == 5):
+            if(total_amount <=  0):
+                print("You not yet order.. order the food ")
+                continue
+            else:
+                print("==== bill ====")
+                print("Customer : ",customer)
+                print("Items | quantity | Amount")
+                if(idli_quantity > 0):
+                    print("Idli     ", idli_quantity,   "        " , ia)
+                if(dosa_quantity > 0):
+                    print("Dosa     ", dosa_quantity,   "        " , da)
+                if(biryani_quantity > 0):
+                    print("Biryani  ", biryani_quantity,"        " , ba)     
+                if(coffee_quantity > 0):
+                    print("Coffee   ", coffee_quantity, "        " , ca)
+                discount = total_amount * 0.10
+                total_amount = total_amount - discount
+                gst = total_amount * 0.05
+                print("Total amount : ", total_amount + gst)
+                print("Thank you for visting!")
+                break
+foodOrder("Daya")
+foodOrder("Ashu")
