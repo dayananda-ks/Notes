@@ -1,3 +1,8 @@
+
+"""
+4) Electricity bill: Calculate the bill from units consumed using slabs (first 100 units free, next
+100 at Rs.1.5, next 100 at Rs.3, above 300 at Rs.5). Add a fixed charge of Rs.50 if the bill is above zero"""
+
 units=float(input("Enter the total units consumed : "))
 bill = 0
 if units <= 100:

@@ -517,7 +517,7 @@ Python expects something that can provide elements one by one.
 For example:
 
 ```python
-for i in [100]:
+for i in [100]
     print(i)
 ```
 

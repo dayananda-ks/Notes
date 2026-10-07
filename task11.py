@@ -2,6 +2,7 @@
 #  Move the elevator one floor at a time using loops. 
 # Print each floor passed and stop at requested floors. Handle direction changes, ignore the current
 # floor, and reject floors above 10.
+
 current_floar = int(input("Enter the current floar : "))
 while(True):
     dest_floar = int(input("Enter the dest floar : "))

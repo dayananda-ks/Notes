@@ -1,3 +1,20 @@
+# 3) Voting app: Accept the number of voters. For each voter, check that they are 18 or older,
+# and skip those who aren't. Let eligible voters choose among three candidates, and count
+# invalid votes separately. At the end, print each candidate's votes and declare the winner, or a
+# tie.
+
+# take input  to all
+# elgible left not right and count it seperate
+# left tree 
+# eligible choose 1 among 3. give option to voter to vote
+# count each candi votes.
+#check who is winner a is b and c etc declare winner
+# if tie if 3 same ====
+# a == b 
+# b == c 
+# c == a
+
+
 n  = int(input("Total voters : "))
 can1 = "a"
 total_a_vote = 0

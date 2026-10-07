@@ -82,3 +82,21 @@ Class → JVM → Object
 **Class = Blueprint**
 
 **Object = Actual Entity**
+
+
+
+<!-- In python file name is main file
+when we write code in file the pvm will allocate memory space to class of one address then refernce varible stores the address of the object and  -->
+
+Rules of varibales 
+
+1. var _ or char. start
+2. var contain A-Z,a-z, and 0-9
+3. var can't contains only digit
+4. keyword are not allowed
+5. spaces not allpwed
+6. spl symbols are not allowed expect _ 
+7. it do not start with number and it conatins number in middile or end.
+
+
+
